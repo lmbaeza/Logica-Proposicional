@@ -16,6 +16,8 @@ while not isExit:
         if number>=1 and number <= 3:
             with open('./example/input-{}.txt'.format(number), 'r') as file:
                 code = file.read()
+                print('\nCASO DE PRUEBA #'+str(number))
+                print('FILE: /example/input-{}.txt\n'.format(number))
                 print('------OUTPUT------')
                 parser.run(code)
         else:
