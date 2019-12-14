@@ -1,0 +1,10 @@
+void main() {
+    p : 2*(7-9) == 12;
+    x:=8455;
+    escribir(p);
+    escribir(x);
+    p1 : [(3*1 + 4*23)]*89 <> x;
+    escribir(p1);
+    y := 45*x-67;
+    escribir(y);
+}

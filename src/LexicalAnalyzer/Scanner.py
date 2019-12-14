@@ -24,7 +24,7 @@ class Lexer:
 
 
     t_EQUAL       = r'\=\='
-    t_NOTEQ       = r'\!\='
+    t_NOTEQ       = r'\!\=|≠|<>'
     t_LARGE       = r'\>'
     t_LARGE_EQ    = r'\>\='
     t_SMALL       = r'\<'
@@ -33,8 +33,12 @@ class Lexer:
     t_EQUALS      = r'\:\='
     t_ASSIGN_COMP = r'\:'
 
+    t_OR          = r'\∨'
+    t_AND         = r'\^'
+
     t_MAIN        = r'(main)'
     t_VOID        = r'(void)'
+    t_ESCRIBIR    = r'(escribir)'
 
     # Ignorar Caracteres
     t_ignore      = ' \t'
@@ -44,12 +48,13 @@ class Lexer:
             'PREDICADO_ARITMETICO', 'PREDICADO_ALGEBRAICO', 'LPAREN', 'RPAREN', 'SEMICOLON',
             'EQUAL', 'NOTEQ', 'LARGE', 'LARGE_EQ', 'SMALL', 'SMALL_EQ', 'INTEGER', 'FLOAT',
             'ID', 'PLUS', 'MINUS', 'TIMES', 'DIVIDE', 'EQUALS', 'ASSIGN_COMP', 'LSQUARE_BRACKET',
-            'RSQUARE_BRACKET', 'LCURLY_BRACKET', 'RCURLY_BRACKET'
+            'RSQUARE_BRACKET', 'LCURLY_BRACKET', 'RCURLY_BRACKET', 'OR', 'AND'
         ]
 
         self.keywords = {
             'void': 'VOID',
-            'main': 'MAIN'
+            'main': 'MAIN',
+            'escribir': 'ESCRIBIR'
         }
 
         self.tokens +=  list([v for k, v in self.keywords.items()])
