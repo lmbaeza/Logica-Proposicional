@@ -1,0 +1,24 @@
+
+
+void main() {
+    q54 : 100 == (99 + 1);
+    escribir(q54);
+
+    x234 := 1024;
+    escribir(x234);
+
+    y234 := 512;
+    escribir(y234);
+
+    p : (x234 / 2) == y234;
+    escribir(p);
+
+    r234 : (y234 * 2) == x234;
+    escribir(r234);
+
+    x := x234 * 2;
+    escribir(x);
+    
+    y := x * 2;
+    escribir(y);
+}

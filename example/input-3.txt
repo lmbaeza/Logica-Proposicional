@@ -1,0 +1,18 @@
+
+
+void main() {
+    p123 : 135 >= 23;
+    escribir(p123);
+
+    x := 24;
+    escribir(x);
+
+    q : (x + 34) < 100;
+    escribir(q);
+
+    r532 : (x * 2) - 10 == 35;
+    escribir(r532);
+    
+    y321 := x + 1024;
+    escribir(y321);
+}

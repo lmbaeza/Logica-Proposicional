@@ -34,6 +34,7 @@ class StatementAssignComparison(Expression):
         self.aritm = aritm
         self.comp = comp
         self.table = varGlobal.table()
+        varGlobal.setTable(self.aritm, self.comp)
     
     def evaluate(self):
         # if self.table.get(self.aritm) is None:
@@ -48,6 +49,7 @@ class StatementAssign(Expression):
         self.varName = varName
         self.expr = expr
         self.table = varGlobal.table()
+        varGlobal.setTable(self.varName, self.expr)
     
     def evaluate(self):
         # if self.table.get(self.varName) is None:
