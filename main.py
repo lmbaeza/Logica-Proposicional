@@ -1,6 +1,12 @@
-from src.LexicalAnalyzer.Scanner import Lexer
+from src.SyntacticAnalyzer.Parser import Parser
 
-lex = Lexer()
+parser = Parser()
 
-lex.test('==')
 
+code = '''
+void main() {
+    x := 12;
+    p := p == 0;
+}
+'''
+parser.run(code)
