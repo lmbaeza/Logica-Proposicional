@@ -2,10 +2,13 @@
 
 ### Integrantes
 
-Julián Ricardo Beltrán Lizarazo - jrbeltranl@unal.edu.co
-Sarah Lancheros Soler - slancheross@unal.edu.co
-Gustavo Gálvez Bello - ggalvezb@unal.edu.co
-Luis Miguel Baez Aponte - lmbaeza@unal.edu.co
+* Julián Ricardo Beltrán Lizarazo - jrbeltranl@unal.edu.co
+
+* Sarah Lancheros Soler - slancheross@unal.edu.co
+
+* Gustavo Gálvez Bello - ggalvezb@unal.edu.co
+
+* Luis Miguel Baez Aponte - lmbaeza@unal.edu.co
 
 ### Ejecutar Pruebas
 
