@@ -128,4 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Visual Studio Code
 .vscode/
+
+# Python Lex Yacc
+parser.out
+parsetab.py
