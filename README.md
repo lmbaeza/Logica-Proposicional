@@ -12,7 +12,13 @@
 
 ### Ejecutar Pruebas
 
-Para ejecutar las pruebas únicamente ejecutamos el comando: `python main.py` el cual muestra una interfaz de linea de comando como la siguiente:
+Primeramente hay que instalar las dependencias del proyecto con el siguiente comando.
+
+```shell
+pip install -r requirements.txt
+```
+
+Seguidamente para ejecutar las pruebas únicamente ejecutamos el comando: `python main.py` el cual muestra una interfaz de linea de comando como la siguiente:
 
 ```console
 [...] Ingrese un numero del [1, 3] para elegir un caso de prueba

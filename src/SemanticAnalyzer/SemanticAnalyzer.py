@@ -6,7 +6,8 @@ varGlobal = VariableGlobal()
 # Clase padre para todas las Expresiones
 class Expression(object):
     def evaluate(self):
-        # Acá se implementa cada tipo de expresion.
+        # Metodo no implementado, el cual lo deben sobreescribir las
+        # clases hijas
         raise NotImplementedError
 
 
@@ -37,10 +38,6 @@ class StatementAssignComparison(Expression):
         varGlobal.setTable(self.aritm, self.comp)
     
     def evaluate(self):
-        # if self.table.get(self.aritm) is None:
-            # varGlobal.setTable(self.aritm, self.comp)
-        # else:
-        #     print('Error: variable "{0}" is already defined'.format(self.aritm))
         varGlobal.setTable(self.aritm, self.comp)
 
 
@@ -52,10 +49,6 @@ class StatementAssign(Expression):
         varGlobal.setTable(self.varName, self.expr)
     
     def evaluate(self):
-        # if self.table.get(self.varName) is None:
-        #     varGlobal.setTable(self.varName, self.expr)
-        # else:
-        #     print('Error: variable "{0}" is already defined'.format(self.varName))
         varGlobal.setTable(self.varName, self.expr)
 
 class StatementExpr(Expression):
@@ -253,3 +246,4 @@ class Boolean(Expression):
     
     def __ne__(self, other):
         return Boolean(self.value != other.value)
+
