@@ -119,3 +119,4 @@ class Lexer:
             tok = self.lexer.token()
             if not tok: break
             print(tok)
+
